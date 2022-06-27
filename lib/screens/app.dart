@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../navigation/bottom_navigator.dart';
-import 'home.dart';
+import 'home/home.dart';
 import 'search.dart';
 import 'your_library.dart';
 
