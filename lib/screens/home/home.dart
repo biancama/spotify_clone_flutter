@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:spotify_clone/screens/home/spotify_app_bar.dart';
 
+import 'spotify_grid.dart';
+
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
 
@@ -11,7 +13,7 @@ class Home extends StatelessWidget {
       child: Container(child: Column(
         children: [
           createSpotifyAppBar(appTitle),
-          Text('Home', style: TextStyle(fontSize: 40, color: Colors.yellow)),
+          createGrid()
         ],
       )),
     );
