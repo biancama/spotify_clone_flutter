@@ -33,14 +33,14 @@ List<Widget> createListOfCategories() {
 
 Widget createGrid() {
   return Container(
-    padding: EdgeInsets.all(10),
+    padding: const EdgeInsets.all(10),
     height: 280,
     child: GridView.count(
       childAspectRatio: 5 / 2,
       crossAxisSpacing: 10,
       mainAxisSpacing: 10,
-      children: createListOfCategories(),
       crossAxisCount: 2,
+      children: createListOfCategories(),
     ),
   );
 }

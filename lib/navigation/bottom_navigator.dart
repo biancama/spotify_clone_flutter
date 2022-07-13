@@ -22,11 +22,12 @@ class _BottomNavigatorSpotifyState extends State<BottomNavigatorSpotify> {
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
+    final backgroundColor = Theme.of(context).backgroundColor;
     return Scaffold(
       body: Center(
         child: tabs.elementAt(_selectedIndex),
       ),
-      backgroundColor: Colors.black,
+      backgroundColor: colorScheme.background,
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
         selectedItemColor: colorScheme.onPrimary,
